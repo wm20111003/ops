@@ -8,7 +8,7 @@ import org.eclipse.jetty.server.Server;
 public class JettyStart {  
 
 	public static final int PORT = 8080;
-	public static final String CONTEXT = "/bishe";
+	public static final String CONTEXT = "/ops";
 	public static void main(String[] args) throws Exception {
 		Server server = JettyUtils.buildDebugServer(PORT, CONTEXT);
 		server.start();
