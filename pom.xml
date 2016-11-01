@@ -10,7 +10,7 @@
 	<name>ops</name>
 	<properties>
 		<finalName>ops</finalName>
-		<jetty.version>7.6.13.v20130916</jetty.version>
+		<jetty.version>9.1.0.v20131115</jetty.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.11</junit.version>
 
