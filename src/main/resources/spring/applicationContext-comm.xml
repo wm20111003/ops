@@ -25,7 +25,7 @@
 		</property>
 	</bean>
 		<!-- 扫描的包路径 去掉mvc的注解-->
-	<context:component-scan base-package="com.centfor">
+	<context:component-scan base-package="com.main.centfor">
 	<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 </context:component-scan>
 </beans>

@@ -18,8 +18,8 @@
 			<fileNamePattern>/data/tomcat/logs/error/zzt_%d{yyyy-MM-dd}</fileNamePattern>
 		</rollingPolicy>
 		<!-- 日志过滤器 -->
-		<!-- <filter class="ch.qos.logback.classic.filter.LevelFilter"> <level>DEBUG</level> 
-			<onMatch>ACCEPT</onMatch> <onMismatch>DENY</onMismatch> </filter> -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter"> <level>DEBUG</level> 
+			<onMatch>ACCEPT</onMatch> <onMismatch>DENY</onMismatch> </filter>
 	</appender>
 	<!-- 数据库访问较慢的语句 -->
 	<appender name="sqlFile"
@@ -36,7 +36,7 @@
 		<appender-ref ref="sqlFile" />
 	</logger>
 	
-	<logger name="com.centfor" level="DEBUG" />
+	<logger name="com.main.centfor" level="DEBUG" />
 	
 	<root level="ERROR">
 		<appender-ref ref="stdout" />

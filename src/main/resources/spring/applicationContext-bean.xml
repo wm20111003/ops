@@ -15,7 +15,7 @@
 	default-lazy-init="false">
 
 	<!-- 加载*.properties File -->
-	<bean id="initService" class="com.centfor.common.service.impl.InitServiceImpl">
+	<bean id="initService" class="com.main.centfor.common.service.impl.InitServiceImpl">
 		<property name="_initSqls">
 			<list>
 				<value></value>

@@ -16,7 +16,7 @@
 
 	<!-- 工作的bean -->
 
-	<bean id="spMemberService" class="com.centfor.school.service.impl.SpMemberServiceImpl"></bean>
+	<bean id="spMemberService" class="com.main.centfor.school.service.impl.SpMemberServiceImpl"></bean>
 	<!-- job的配置结束 -->
 
 

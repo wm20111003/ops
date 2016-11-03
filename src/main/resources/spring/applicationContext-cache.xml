@@ -50,7 +50,7 @@
 		<property name="connectionFactory" ref="jedisConnectionFactory" />
 	</bean>
 
-	<bean id="redisCached" class="com.centfor.frame.cached.RedisCachedImpl">
+	<bean id="redisCached" class="com.main.centfor.frame.cached.RedisCachedImpl">
 		<property name="redisTemplate" ref="redisTemplate" />
 		<property name="expire" value="86400" />
 	</bean>

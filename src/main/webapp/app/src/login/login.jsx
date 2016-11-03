@@ -1,9 +1,7 @@
 import React from 'react';
 import { Form, Input, Button, notification} from 'antd';
-import createHistory from 'history/lib/createHashHistory';
-
+import {createHistory} from 'history';
 import './login.less'
-
 const FormItem = Form.Item;
 const history = createHistory();
 
@@ -17,6 +15,7 @@ class LoginPage extends React.Component {
         let n = this.props.form.getFieldsValue().username;
         let p = this.props.form.getFieldsValue().password;
         if (n === 'ilovejasonbai' && p === 'ilovejasonbai') {
+            debugger;
             // 表单的路由处理                       
             history.push('/');
         } else {
