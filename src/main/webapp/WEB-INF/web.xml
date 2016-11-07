@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
 	<welcome-file-list>
-		<welcome-file>/system/index</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 
 	<context-param>
@@ -16,7 +16,7 @@
 	</listener>
 
 	<servlet>
-		<servlet-name>centfor</servlet-name>
+		<servlet-name>ops</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
@@ -26,7 +26,7 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>centfor</servlet-name>
+		<servlet-name>ops</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
@@ -72,7 +72,7 @@
 	</filter-mapping>
 	<filter-mapping>
 		<filter-name>httpMethodFilter</filter-name>
-		<servlet-name>centfor</servlet-name>
+		<servlet-name>ops</servlet-name>
 	</filter-mapping>
 <!-- 解决Jetty启动后不能修改静态文件问题 -->
 	<servlet>
