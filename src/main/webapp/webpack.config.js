@@ -21,8 +21,8 @@ module.exports = {
         vendors:['react','react-dom','react-router','reflux']  //第三方库和框架
     },
     output: {
-        path: 'app/dist',  //不写居然也没事，由于有服务器，生成不了静态文件，这也是一个坑
-        publicPath: 'dist/',
+        path: 'app/dist/',  //不写居然也没事，由于有服务器，生成不了静态文件，这也是一个坑
+        publicPath: '../',
         filename: 'js/bundle.js',
     },
     module: {
@@ -30,7 +30,7 @@ module.exports = {
             { test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css') }, //坑：不能用叹号链接，必须写成这种格式
             { test: /\.less$/, loader: ExtractTextPlugin.extract('css!less') },
             { test: /\.js[x]?$/, exclude: /node_modules/, loader: 'babel' },
-            { test: /\.(png|jpg)$/, loader: 'url?limit=8192&name=../img/[name].[ext]' },
+            { test: /\.(png|jpg)$/, loader: 'url?limit=8192&name=img/[name].[ext]' },
             { test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/, loader: 'url' }
         ]
     },
